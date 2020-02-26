@@ -1,0 +1,81 @@
+/*Add this in so that older browsers know how to display newer HTML5 elements*/
+header, nav, main, footer, aside {display: block;}
+/*By default browser only includes widht/height of the element to determine space to take up,
+by changing the box-sizing to border-box, any padding and border will be included in the width and height
+use universal selector (*) to select all elements*/
+*{box-sizing: border-box;}
+
+body {margin: 0;
+	 background-color: #ffffff;
+}
+#container {color: #006600;
+			font-family: Verdana, Arial, sans-serif;
+}
+header {  background-color: #636631;
+          background-image: url(showybg.jpg);
+          background-position: bottom;
+          background-repeat: repeat-x;
+          height: 120px;
+          color: #cc66cc;
+          text-align: right;
+          padding: 0 20px;
+          border-bottom: 2px solid #000000;
+}
+nav {float: left;
+	width: 150px;
+    background-color: #eeeeee;
+}
+aside {float: right;
+	 width: 200px;
+
+}
+main {margin: 0 21px 0 160px;
+	padding: 1px 10px 20px 10px;
+	background-color: #ffffff;
+	color: #006600;
+}
+footer {font-size: .70em;
+        text-align: center;
+        color: #006600;
+        background-color: #ffffff;
+        padding-top: 10px;
+        clear: both; /*Clears the floated image in the center content area*/
+}
+h1 {margin-top: 0;
+	font-size: 3em;
+	text-align: left;
+	text-shadow: 2px 2px 2px #000000;
+}
+header a{font-size: 0.80em;}
+header a:link, header a:visited{color: #ffffff;}
+header a:focus, header a:hover {color: #eeeeee;}
+
+nav ul {margin-top: 20px;
+        list-style-type: none;
+}
+nav a {text-decoration: none;
+	 font-size: 1.2em;
+}
+nav a:link{color:#006600;}
+nav a:visited{color:#003300;}
+nav a:focus, nav a:hover{color: #cc66cc;}
+nav a:active{color: #000000;}
+
+nav img {margin: 30px;}
+main p {margin: 20px;
+}
+main h2, main h3 {color: #cc66cc;
+				background-color: #ffffff;
+}
+.floatright {margin: 10px;
+			float: right;
+}
+aside h3 {padding-bottom: 2px;
+		border-bottom: 1px solid #000000;
+		margin: 10px;
+		font-size: 0.90em;
+		color: #cc66cc;
+}
+.news {font-size: 0.80em;
+	   margin: 10px;
+}
