@@ -79,3 +79,60 @@ aside h3 {padding-bottom: 2px;
 .news {font-size: 0.80em;
 	   margin: 10px;
 }
+@media only screen and (max-width: 1024px) {
+	main {
+		margin: 0;
+	}
+	body {
+		margin: 0;
+	}
+	#container {
+		min-width: auto;
+	}
+	nav {
+		float: none;
+		width: auto;
+	}
+	nav li {
+		display: inline-block;
+		padding: 0.5em;
+	}
+	aside {
+		float: none;
+		width: auto;
+	}
+	h1, h2, h3 {
+		font-size: 120%;
+	}
+	p {
+		font-size: 90%;
+	}
+	nav img {
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#container {
+		min-width: auto;
+	}
+	nav, nav ul, nav li {
+		padding: 0px;
+	}
+	nav li {
+		display: block;
+	}
+	h1, h2, h3 {
+		font-size: 100%;
+	}
+	p, .news {
+		font-size: 80%;
+	}
+	img {
+		display: none;
+	}
+	nav a {
+		display: block;
+		padding: 0.5em 5px;
+		border-bottom: 2px ridge #00005d;
+	}
+}
